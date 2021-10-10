@@ -83,6 +83,9 @@ void deleteByPos(List* list, int position){
   previous->next = current->next;
 }
 
+
+
+
 int main() {
 
   List* list = new List;
@@ -94,12 +97,16 @@ int main() {
   insertFront(list, "As esu pirmesnis Elementas");
   insertByPos(list, 2, "Pagal pozicija : 2");
 
+
   deleteByPos(list, 6);
 
   deleteEnd(list);
 
+  deleteFront(list);
 
   displayList(list->head);
+
+
 
 
   return 0;
